@@ -29,10 +29,8 @@
 
   // Thêm lớp nền từ OpenStreetMap
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap contributors'
-  }).addTo(map);
-
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
   // Thêm 1 marker (ví dụ tại Hà Nội)
   var marker = L.marker([19.7706,105.8999]).addTo(map);
   marker.bindPopup("<b>Home</b><br>Nhà Thư nè").openPopup();
