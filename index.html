@@ -28,8 +28,8 @@
   var map = L.map('map').setView([14.0583, 108.2772], 6);
 
   // Thêm lớp nền từ OpenStreetMap
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-  attribution: 'Tiles © Esri'
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
   // Thêm 1 marker (ví dụ tại Hà Nội)
   var marker = L.marker([19.7706,105.8999]).addTo(map);
